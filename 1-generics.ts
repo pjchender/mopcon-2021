@@ -55,6 +55,12 @@ type ConferenceWithDefault<T extends string | number = number> = {
   price: T;
 };
 
+// 類似
+// function getName(p = {}) {
+//   return p.firstName;
+// }
+// getName()
+
 // 沒有帶入型別參數的話，會套用預設值
 // const mopcon: ConferenceWithDefault = {
 //   name: 'MOPCON',

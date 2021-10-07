@@ -52,5 +52,8 @@ type T2 = {
  */
 // STEP 1：先透過實際的範例把功能寫成來
 // STEP 2：把可以變成參數的地方抽出來
+type PickObj<T, K extends keyof T> = {
+  [Property in K]: T[Property];
+};
 
 export {};

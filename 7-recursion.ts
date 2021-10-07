@@ -13,6 +13,6 @@ type NumberArray = ValueOrArray<number>;
 type NestedNumberArray = ValueOrNestedArray<number>;
 
 let numberArray: NumberArray = [0, 1, [2]];
-let nestedNumberArray: NestedNumberArray = [0, 1, [2]];
+let nestedNumberArray: NestedNumberArray = [0, 1, [2, [3]]];
 
 export {};

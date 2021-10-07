@@ -52,7 +52,14 @@ type AtConference = `at${ConferenceName}Conference`;
 
 // STEP 1：先透過實際的範例把功能寫成來：取得 Conference 中所有屬性的 Keys。
 
+type Person = {
+  firstName: string;
+  lastName: string;
+};
+
 // STEP 2：把可以變成參數的地方抽出來
 // https://github.com/piotrwitek/utility-types/blob/master/src/utility-types.ts#L13
+type Keys<T> = keyof T & string;
+type T3 = Keys<Person>;
 
 export {};
